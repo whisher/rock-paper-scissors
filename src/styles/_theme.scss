@@ -1,13 +1,85 @@
+/* Sticky footer styles
+-------------------------------------------------- */
+html {
+  position: relative;
+  min-height: 100%;
+}
 body {
+  /* Margin bottom by footer height */
+  margin-bottom: 84px;
+}
+.morra-container{}
+.morra-header{
+  @include clearfix;
+  background-color: #f5f5f5;
+  margin: 0;
+  min-height: $navbar-height;
+  left: 0;
+  padding: 0; 
+  position: fixed;
+  right: 0;
+  top: 0;
+  z-index: $zindex-navbar-fixed; 
+}
+.morra-sub-header{
+  @include clearfix;
+  @extend .container;
+}
+.morra-badge{
+  @extend .badge;
+  font-size: 18px;
+  margin-top: 10px;
+}
+.badge-player{
+  @extend .morra-badge;
+  color: $player-color;
+}
+.badge-server{
+ @extend .morra-badge;
+ color: $server-color;
+}
+.morra-content{
+ margin-top: 60px;
+ @extend .container;
+}
+
+.morra-footer {
+  background-color: #f5f5f5;
+  bottom: 0;
+  height: 84px;
+  position: absolute;
+  width: 100%;
+}
+.morra-sub-footer {
+  @include clearfix;
+  @extend .container;
+  padding: 15px 0;
+}
+.morra-item{
+  background-image: url(../images/morra.png); 
+  display: inline-block;
+  height: 54px;
   text-align: center;
-  color: #222;
+  width: 54px;
 }
-.welcome {
-  @extend .jumbotron;
-  background: #eee;
+.paper {
+  @extend .morra-item;
+  background-position: 56px -62px;
+}
+.rock {
+  @extend .morra-item;
+  background-position: 176px -62px;
+}
+.scissor{
+  @extend .morra-item;
+  background-position: 116px -62px;
+}
+.item-player{
+  background-color: $player-color;
+}
+.item-server{
+  background-color: $server-color;
 }
 
 
-a, a:visited {
-  text-decoration: none;
-}
+

@@ -1,0 +1,33 @@
+<div class="morra-container">
+	<div class="morra-header">
+		<div class="row">
+			<div class="col-md-6 text-right">
+			 <span class="badge-player">{{mrc.playerScore}}</span>	
+			 </div>
+			 <div class="col-md-6 text-left">
+			 <span class="badge-server">{{mrc.serverScore}}</span>			
+			 </div>
+		</div>
+	</div>
+	    
+	<div class="morra-content">
+		<div class="row"   ng-show="mrc.isShowed">
+			<div class="col-md-6 text-center">
+				<div class="{{mrc.currentPlayer}} item-player"></div>
+			</div>
+			<div class="col-md-6 text-center">
+			 	<div class="{{mrc.currentServer}} item-server"></div>
+			</div>
+		</div>	
+	</div>
+
+	<div class="morra-footer">
+	 	<div class="morra-sub-footer">
+	 		<div class="row">
+			 	<div class="col-md-4 text-center" ng-repeat="item in mrc.items">
+			 		<div class="{{item}} item-player" ng-click="mrc.play({item:item})"></div>
+			        	</div>
+			</div>	
+	      	</div>
+	</div>
+</div>
