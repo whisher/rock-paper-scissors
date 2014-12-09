@@ -24,4 +24,4 @@
     ../cordova -d platform add android
     ../cordova -d run android
     
-  ## [DEMO](https://morra.firebaseapp.com/)
+  ## [DEMO](https://myrcs.firebaseapp.com/)
