@@ -1,9 +1,11 @@
 (function() {
 'use strict';
 
-function HomeController() {
+function HomeController($state) {
     var home = this;
-    home.welcome = 'Welcome!';
+    home.play= function(){
+    	$state.go('morra');
+    };
 }
 
 angular.module('home.controllers', [])

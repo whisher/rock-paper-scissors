@@ -28,7 +28,13 @@ function player($templateCache, $state, Player) {
           mrc.serverScore = Player.addScoreServer();
         }
         if( (mrc.playerScore >= 10) || (mrc.serverScore >= 10)){
-          $state.go('home');
+          if( mrc.playerScore > mrc.serverScore){
+                $state.go('morra_result', {id:1});
+              }
+              else{
+                $state.go('morra_result', {id:0});
+              }
+              Player.resetScore();
         }
       };
     },

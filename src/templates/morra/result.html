@@ -1,0 +1,12 @@
+<div class="result-content">
+	<div class="row">
+    		<div class="col-xs-4 col-xs-offset-4">
+			<div class="text-center morra-result" ng-switch="mrs.result">
+  				<h3 class="text-success" ng-switch-when="1">Your are a winner :)</h3>
+  
+  				<h3 class="text-danger" ng-switch-default>You are a loser :(</h3>
+  			</div>
+			<div class="text-center"><button type="button" class="btn btn-primary btn-lg" ng-click="mrs.play()">Play</button></div>
+    		</div>
+	</div>
+</div>

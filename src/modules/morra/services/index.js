@@ -35,6 +35,10 @@
             isWinner:function(currentPlayer,currentServer){
                 return combinations[currentPlayer + '_' + currentServer];
             },
+            resetScore: function(){
+                playerScore = 0;
+                serverScore = 0;
+            },
             shuffle: function(current) {
                 var array = angular.copy(items);
                 var indexToDelete = array.indexOf(current); 

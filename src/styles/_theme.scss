@@ -8,6 +8,17 @@ body {
   /* Margin bottom by footer height */
   margin-bottom: 84px;
 }
+.home-content{
+  @extend .container;
+  margin-top:200px;
+}
+.result-content{
+   @extend .container;
+   margin-top:200px;
+}
+.morra-result h3{
+  display:inline-block;
+}
 .morra-container{}
 .morra-header{
   @include clearfix;
@@ -39,7 +50,7 @@ body {
  color: $server-color;
 }
 .morra-content{
- margin-top: 60px;
+ margin-top: 150px;
  @extend .container;
 }
 
@@ -57,6 +68,8 @@ body {
 }
 .morra-item{
   background-image: url(../images/morra.png); 
+  -moz-border-radius: 5px;
+  border-radius: 5px;
   display: inline-block;
   height: 54px;
   text-align: center;
