@@ -6,7 +6,7 @@
 **A simple rock-paper-scissors game for web and mobile**
 
 ## Credits
-* [Cordova-Angular-Browserify](https://github.com/whisher/angular-bootstrap-cordova-seed)
+* [Angular-bootstrap-cordova-seed](https://github.com/whisher/angular-bootstrap-cordova-seed)
 
 
 ## Tools Prerequisites
